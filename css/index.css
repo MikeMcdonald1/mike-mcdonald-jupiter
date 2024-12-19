@@ -6,6 +6,16 @@ body {
     padding-top: 30px;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: lightcyan; /* Optional: Add a background color to make it more visible */
+    padding: 10px; /* Optional: Add some padding */
+    border: 2.5px solid darkcyan;
+    border-radius: 5px;
+}
+
 #header {
     background-color: rgb(242, 203, 136);
     font-family: Tahoma;
@@ -13,7 +23,7 @@ body {
     text-align: center;
 }
 
-#Image {
+.image {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -21,9 +31,10 @@ body {
     height: auto;
 }
 
-#Image img {
+.image img {
     width: 100%;
     height: auto;
+    float: right;
 }
 
 h2 {
@@ -32,33 +43,61 @@ h2 {
     color: navy;
 }
 
-#About {
+#about {
     background-color: lightcyan;
     margin-top: 65px;
     padding-left: 5px;
 }
 
-#Experience {
+#experience {
     background-color: lightcyan;
-    padding-left: 5px;
+    padding: 10px;
+    margin-top: 65px;
 }
 
-.experience-list {
-    list-style-type: none;
-    padding: 0;
+.job {
+    margin-bottom: 20px;
+    border-bottom: 1px solid navy;
+    padding-bottom: 10px;
 }
 
-.experience-list li {
-    background-color: #e8ecfb;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
 }
 
-#Connect {
+.job-title {
+    font-size: 1.1rem;
+    color: darkblue;
+}
+
+.job-date {
+    color: darkblue;
+    text-align: right;
+}
+
+.job-description {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: darkblue;
+}
+
+#connect {
     background-color: lightcyan;
-    padding-left: 5px;
+}
+
+.connect-links {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   /* for reference "flex-flow: row nowrap;" is shorthand for flex-direction and flex-wrap*/
+   justify-content: flex-end;
+   gap: 10px;
+   list-style-type: none;
+   padding-right: 5px;
+   background-color: rgb(242, 203, 136); 
 }
 
 a{

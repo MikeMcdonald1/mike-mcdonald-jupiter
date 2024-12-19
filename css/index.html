@@ -12,37 +12,84 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#connect">Contact</a></li>
+            </ul>
+        </nav>
+
         <section id="header">
             <h1>Mike McDonald</h1>
-            <section id="Image">
+            <section class="image">
                 <img src="mike-photo.jpg" alt="image of Mike McDonald">
             </section>
         </section>
-        <section id="About">
+
+        <section id="about">
             <h2>About</h2>
-            <section id="About-paragraph">
+            <section class="about-paragraph">
                 <p>My name is Mike McDonald, and I am a student at Code The Dream.</p>
             </section>
         </section>
-        <section id="Experience">
+
+        <section id="experience">
             <h2>Experience</h2>
-                    <ul class="experience-list">
-                        <li>CTD - Intro to Programming</li>
-                        <li>HTML, CSS, and Javascript</li>
-                        <li>Overall, pretty cool guy</li>
-                    </ul>
+
+                <div class="job"> <!-- Holds all the content and elements for each job listing -->
+                    <div class="job-header"> <!-- specifically holds job title and date, related items-->
+                        <span class="job-title">Operations Manager</span>
+                        <span class="job-date">2024 - Present</span>
+                    </div>
+                    <div class="job-description">Operations Manager Job Description</div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Executive Recruiter</span>
+                        <span class="job-date">2021 - 2024</span>
+                    </div>
+                    <div class="job-description">Executive Recruiter Job Description</div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Distribution Operations Manager</span>
+                        <span class="job-date">2015 - 2021</span>
+                    </div>
+                    <div class="job-description">Distribution Operations Manger Description</div>
+                </div>
+
         </section>
-        <section id="Connect">
+
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <!-- Using Javascript to insert a list of skills later in the course -->
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+                <ul>
+                    <!-- Using Javascript to add GitHub projects via API call to this section later in the course -->
+                </ul>
+        </section>
+
+        <section id="connect">
             <h2>Connect</h2>
                 <ul class="connect-links">
                     <li><a href="https://github.com/MikeMcdonald1/">GitHub</a></li>
                     <li><a href="https://www.linkedin.com/in/mike-mcdonald-480/">LinkedIn</a></li>
                 </ul>
         </section>
+
     </body>
 </html>
 
-<!-- STRETCH GOAL CODE FOR ADDING IMAGE IN PLACE OF HYPERLINK
+<!-- STRETCH GOAL CODE WEEK 9 FOR ADDING IMAGE IN PLACE OF HYPERLINK
     <li><a href="https://github.com/MikeMcdonald1/"><img src="GitHub_Logo.png" alt="GitHub Logo" class="github-logo"></a></li>
     
     I understand the basic idea of adding the image as a link, but I could not get the formatting of the image to match the portfolio. It looked very out of place. -->
