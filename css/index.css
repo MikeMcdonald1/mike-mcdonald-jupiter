@@ -1,0 +1,256 @@
+/* Desktop-first CSS */
+
+html {
+      scroll-padding-top: 4rem;
+      overflow-x: hidden;
+}
+
+body {
+    background-color: #295768;
+    color: darkblue;
+    font-family: lato;
+    margin: auto;
+    padding-top: 30px;
+    overflow-x: hidden;
+}
+
+/* Styling for the navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #FA986B;
+    padding: 0.1em;
+    border: 2.5px solid darkcyan;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 10px 5px 20px 0.5px rgba(16, 33, 36, 0.75);
+}
+
+/* Styling for the navbar list items */
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+/* Styling for majorSections like About, Experience, Projects, Skills, Leave a Message, and Connect */
+.majorSection {
+    margin: 1.25rem;
+    padding: 0.5rem 1rem;
+    background-color: #FFF8F0;
+    border-radius: 1.5em;
+}
+
+/* Styling for the majorSection headers */
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: darkblue;
+    text-align: center;
+}
+
+/* Styling for Image */
+.image {
+    display: block;
+    margin: 2rem auto 0 auto;
+    width: 150px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+/* Styling for the Header */
+#header {
+    font-family: Tahoma;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+    color: #FFF8F0;
+    text-shadow: -2px 3.5px 5px darkblue;
+}
+
+/* Styling for the Experience Section */
+.job {
+    margin-bottom: 20px;
+    border-bottom: 1px solid darkblue;
+    padding-bottom: 10px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.job-title {
+    font-size: 1.1rem;
+}
+
+.job-date {
+    text-align: right;
+}
+
+.job-description {
+    margin-top: 10px;
+}
+
+/* Styling for the Projects section */
+#projects ul {
+    margin-top: 2rem;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    list-style: none;
+}
+
+/* Styling for Projects list items */
+#projects li {
+    background-color: #F8C6AF;
+    padding: 0.75rem;
+    border: 1px solid #006D6D;
+    border-radius: 0.50rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+/* Styling for Project list items hover */
+#projects li:hover {
+    box-shadow: 10px 5px 25px 1px rgba(16, 33, 36, 0.75);
+}
+
+a{
+    color: navy;
+    font-weight: bold;
+}
+
+a:hover {
+    color:darkcyan; /*hover over skills*/
+}
+
+/* Styling for entire Skills section */
+#skills {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>👨🏻‍💻</text></svg>") 16 0,auto !important; /*emojicursor.app*/
+    transition: all 0.4s;
+}
+
+#skills ul {
+    margin-top: 2rem;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    list-style: none;
+    background-color: #F8C6AF;
+    border-radius: 0.75rem;
+    border: 1px solid #006D6D;
+}
+
+/* Styling for the Skills section list items */
+#skills li {
+    font-size: 1.25rem;
+    text-shadow: 0.5px 0.5px 0 #444;
+}
+
+/* Styling for the Leave a Message form */
+.messageForm, .messageLabel {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for messages that are submitted */
+#messages ul {
+    display: grid;
+    justify-content: center;
+    padding-left: 0;
+    text-align: center;
+    list-style: none;
+}
+
+/* Styling for the Leave a Message section submit button */
+#messages button {
+    margin-left: 10px;
+}
+
+/* Styling for the Connect Links section */
+.connect-links {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 15px;
+    list-style-type: none;
+ }
+
+ /* Styling for the Connect Links icons */
+ .fa-brands, .fa-regular {
+    font-size: 2em;
+ }
+
+ /* Styling for the footer */
+ footer {
+    color:#F8C6AF;
+    font-weight: bold;
+    text-shadow: -1px 2px 5px darkblue;
+ }
+ 
+/*Tablet style CSS (5 html elements changed, 6 property changes total)*/
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 1.1rem;
+        padding-top: 1.5rem;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .image {
+        margin: 3rem auto 0 auto;
+    }
+
+    .about-paragraph, .job-description {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* Mobile style CSS (5 html elements changed, 7 property changes total) */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 1.1rem;
+        padding-top: 10px;
+    }
+
+    .navbar {
+        padding-left: 0;
+    }
+
+    .navbar ul {
+        justify-content: space-evenly;
+        font-size: 0.88rem;
+    }
+
+    .about-paragraph, .job-description {
+        font-size: 1.2rem;
+    }
+
+}
